@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Tarea 1</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  
+</head>
+<body>
+  <form action="">
+    <label for="cantidad-de-personas">Cuantas personas hay en tu grupo familiar</label>
+    <input type="number" id="cantidad-de-personas" min="1" max="100" step="1">
+    <button type="button" id="btn-ok">OK</button><br><br>
+
+    <div id="integrantes">
+
+    </div><br>
+
+    <button type="button" id="btn-calcular">Calcular</button><br>
+
+    <div id="resultados" style="display: none;">
+      <p>La mayor edad en el grupo familiar es&nbsp;<em id="mayor-edad"></em>&nbsp;años.</p>
+      <p>La menor edad en el grupo familiar es&nbsp;<em id="menor-edad"></em>&nbsp;años.</p>
+      <p>El promedio de edad del grupo familiar es&nbsp;<em id="promedio-edad"></em>&nbsp;años.</p>
+    </div>
+    <button type="reset" onclick="empezarDeNuevo()">Empezar de nuevo</button>
+
+  </form>
+
+
+  <script src="tarea1.js"></script>
+</body>
+</html>
